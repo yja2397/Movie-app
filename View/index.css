@@ -59,16 +59,17 @@ header {
 }
 
 .chat-window {
-    width: 800px;
+    width: 700px;
     margin: auto;
     border: 1px solid #d5d5d5;
 }
 
 .conversation-view {
     width: 100%;
-    min-height: 600px;
+    height: 500px;
     padding: 20px 40px;
     background-color: #e5ddd5;
+    overflow:auto;
 }
 
 .message-box {
@@ -77,11 +78,19 @@ header {
 }
 
 .text-input {
-    width: 100%;
+    width: 85%;
     border: none;
     padding: 5px;
 }
 
+.text-submit{
+    width: 10%;
+    margin-left:22px;
+    padding:5px;
+    background-color: #61dafb;
+    color:white;
+    border:0;
+}
 
 .chat-bubble {
     font-size: 20px;
@@ -121,12 +130,12 @@ header {
 
 .circle{
     width: 93px;
-    height:93px;
+    height:60px;
     border-radius: 50%;
     background:#00d3d3;
     font-size:16px;
     text-align:center;
-    line-height:85px;
+    line-height:57px;
     color:white;
     font-weight:bold;
     margin-left: 10px;

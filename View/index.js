@@ -1,8 +1,6 @@
 function first(){
     var chat = document.getElementsByClassName('conversation-view')[0];
-
     var chatAi = document.createElement('div');
-
     var chatSpan = document.createElement('span');
 
     chatAi.setAttribute('class', 'chat-bubble');
@@ -27,4 +25,33 @@ function first(){
     chatSpan.appendChild(chatText);
     chatAi.appendChild(chatSpan);
     chat.appendChild(chatAi);
+    console.log("Hi");
+}
+
+
+function Quest(){
+    var quest = document.form.quest.value;
+    var chat = document.getElementsByClassName('conversation-view')[0];
+    var chatAi = document.createElement('div');
+    var chatSpan = document.createElement('span');
+
+    chatAi.setAttribute('class', 'chat-bubble me');
+    chatSpan.setAttribute('class', 'chat-content');
+
+    var chatText = document.createTextNode(quest);
+
+    chatSpan.appendChild(chatText);
+    chatAi.appendChild(chatSpan);
+    chat.appendChild(chatAi);
+
+    document.form.quest.value = null;
+    var div = document.getElementsByClassName("conversation-view")[0];
+    div.scrollTop = div.scrollHeight;
+
+}
+
+function enterkey(){
+    if(window.event.keyCode == 13){
+        Quest();
+    }
 }

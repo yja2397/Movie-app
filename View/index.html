@@ -15,11 +15,11 @@
 <nav>
 </nav>
 <article>
-    <div class="chat-window">
+    <div class="chat-window" >
         <div class="conversation-view">
-            <div class="chat-bubble me"><span class="chat-content">인기 있는 영화</span></div>
-            <div class="chat-bubble"><span class="chat-content">요즘 인기 있는 영화입니다.</span></div>
-            <div class="chat-bubble">
+            <!--<div class="chat-bubble me"><span class="chat-content">인기 있는 영화</span></div>
+            <div class="chat-bubble"><span class="chat-content">요즘 인기 있는 영화입니다.</span></div>-->
+            <!--<div class="chat-bubble">
                 <span class="chat-content">
                     <div class="movie">
                         <img src="img/2YAu2ctaxVGisdbmbbG35LXpQNp.jpg"><br>
@@ -52,11 +52,12 @@
                         Endless
                     </div>
                 </span>
-            </div>
+            </div>-->
         </div>
         <div class="message-box">
-            <form>
-                <input class="text-input" type="text" autofocus placeholder="어떤 영화든 물어만 보세요!" />
+            <form name="form" onsubmit="return false;">
+                <input onkeyup="enterkey();" name="quest" class="text-input" type="text" autofocus placeholder="어떤 영화든 물어만 보세요!" />
+                <input type="button" class="text-submit" value="전송" onclick="Quest()">
             </form>
         </div>
     </div>
